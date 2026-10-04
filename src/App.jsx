@@ -9,31 +9,47 @@ function App() {
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-   
-
+      <h1>Get started</h1>
+      <Student />
+      <StudentAdderss />
+      <Developer />
     </>
   )
 }
+function StudentAdderss(){
+   const person = {
+    name: "Ajim",
+    age: 25
+  };
+  return (
+    <div className='student'>
+      name:{person.name}  <br />
+      age:{person.age}
+    </div>
+  )
+}
+function Student() {
+  return (
+    <div>
+      <h2>This is a student</h2>
+      <p>Name:</p>
+      <p>Age:</p>
+    </div>
+  )
+}
 
+function Developer() {
+  const developerStyle ={
+    margin:'20px',
+    padding:'20px',
+    border:'2px solid purple',
+    borderRadius:'20px'
+  }
+   return(
+    <div style={developerStyle}>
+      <h3>Developer:</h3>
+      <p>Codding:</p>
+    </div>
+   )
+}
 export default App
