@@ -10,46 +10,56 @@ function App() {
   return (
     <>
       <h1>Get started</h1>
-      <Student />
+      {/* <Student />
       <StudentAdderss />
-      <Developer />
+      <Developer /> */}
+   
+      <Student name="Ajim" Age='25' />
+      <Student name="Sojib" Age='20' />
+      <Student name="Mamun" Age='30' />
     </>
   )
 }
-function StudentAdderss(){
-   const person = {
-    name: "Ajim",
-    age: 25
-  };
-  return (
-    <div className='student'>
-      name:{person.name}  <br />
-      age:{person.age}
-    </div>
+function Student (props){
+  console.log(props)
+  return(
+    <h1> NaMe:{props.name}Age:{props.Age}</h1>
   )
 }
-function Student() {
-  return (
-    <div>
-      <h2>This is a student</h2>
-      <p>Name:</p>
-      <p>Age:</p>
-    </div>
-  )
-}
+// function StudentAdderss(){
+//    const person = {
+//     name: "Ajim",
+//     age: 25
+//   };
+//   return (
+//     <div className='student'>
+//       name:{person.name}  <br />
+//       age:{person.age}
+//     </div>
+//   )
+// }
+// function Student() {
+//   return (
+//     <div>
+//       <h2>This is a student</h2>
+//       <p>Name:</p>
+//       <p>Age:</p>
+//     </div>
+//   )
+// }
 
-function Developer() {
-  const developerStyle ={
-    margin:'20px',
-    padding:'20px',
-    border:'2px solid purple',
-    borderRadius:'20px'
-  }
-   return(
-    <div style={developerStyle}>
-      <h3>Developer:</h3>
-      <p>Codding:</p>
-    </div>
-   )
-}
+// function Developer() {
+//   const developerStyle ={
+//     margin:'20px',
+//     padding:'20px',
+//     border:'2px solid purple',
+//     borderRadius:'20px'
+//   }
+//    return(
+//     <div style={developerStyle}>
+//       <h3>Developer:</h3>
+//       <p>Codding:</p>
+//     </div>
+//    )
+// }
 export default App
