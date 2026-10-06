@@ -3,29 +3,43 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import Todo from './Todo'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const name = "Ajim"
+  const age = 25
+  const city = "Gazipur"
   return (
+
     <>
       <h1>Get started</h1>
+
+      <Todo task='learn React'
+       isDane={true}
+       />
+      <Todo task='jsx'
+       isDane={false}
+       />
+
+
+
       {/* <Student />
       <StudentAdderss />
       <Developer /> */}
-   
-      <Student name="Ajim" Age='25' />
+
+      {/* <Student name="Ajim" Age='25' />
       <Student name="Sojib" Age='20' />
-      <Student name="Mamun" Age='30' />
+      <Student name="Mamun" Age='30' /> */}
     </>
   )
 }
-function Student (props){
-  console.log(props)
-  return(
-    <h1> NaMe:{props.name}Age:{props.Age}</h1>
-  )
-}
+// function Student (props){
+//   console.log(props)
+//   return(
+//     <h1> NaMe:{props.name}Age:{props.Age}</h1>
+//   )
+// }
 // function StudentAdderss(){
 //    const person = {
 //     name: "Ajim",
