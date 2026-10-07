@@ -6,6 +6,7 @@ import './App.css'
 import Todo from './Todo'
 import Actor from './Actor'
 import Singer from './Actor'
+import BookStore from './BookStore'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,12 +20,18 @@ function App() {
     {id:3, name:'kalam', age:20},
     {id:4, name:'abul', age:27}
   ]
+  const books =[
+    {id:1, name:'Bangle', price:205},
+    {id:2, name:'Math', price:345},
+    {id:3, name:'English', price:270},
+    {id:4, name:'plysice', price:297}
+  ]
   return (
 
     <>
       <h1>Get started</h1>
 
-
+       <BookStore books={books}></BookStore>
       {/* <Actor name='AJIM SORKAR'  ></Actor> */}
       
 
