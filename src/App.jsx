@@ -5,6 +5,7 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Todo from './Todo'
 import Actor from './Actor'
+import Singer from './Actor'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,17 +13,29 @@ function App() {
   // const age = 25
   // const city = "Gazipur"
   const actors = ['ajim', 'sorkar', 'babul', 'cabul', 'kabul']
+  const singers =[
+    {id:1, name:'ajim', age:25},
+    {id:2, name:'sorkar', age:35},
+    {id:3, name:'kalam', age:20},
+    {id:4, name:'abul', age:27}
+  ]
   return (
 
     <>
       <h1>Get started</h1>
 
 
-      <Actor name='AJIM SORKAR'  ></Actor>
-      {
-        actors.map(actor => <Actor name={actor}></Actor>)
-      }
+      {/* <Actor name='AJIM SORKAR'  ></Actor> */}
+      
 
+
+      {
+       singers.map( singer => <Singer singer={singer}></Singer>)
+      }
+           
+      {/* {
+        actors.map(actor => <Actor name={actor}></Actor>)
+      } */}
       {/* <Todo task='learn React'
        isDane={true}
        />

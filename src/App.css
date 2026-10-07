@@ -186,3 +186,21 @@
 .student{
   border: 2px solid;
 }
+.singer-card {
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+
+text-align:   center;
+}
+
+.singer-card h3 {
+  color: darkblue;
+}
+
+.singer-card p {
+  margin: 5px 0;
+}
